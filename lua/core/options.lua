@@ -83,6 +83,12 @@ vim.opt.wildignore:append{'*/node_modules/*'}
 -- Blink cursor on error instead of beeping
 -- vim.o.visualbell = true
 
+-- Shortcut to split vertically
+vim.api.nvim_set_keymap('n', '<leader>|', ':vsplit<CR>', { noremap = true, silent = true })
+
+-- Shortcut to split horizontally
+vim.api.nvim_set_keymap('n', '<leader>-', ':split<CR>', { noremap = true, silent = true })
+
 -- Encoding
 vim.o.encoding = 'utf-8'
 
