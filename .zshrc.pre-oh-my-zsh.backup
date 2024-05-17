@@ -1,0 +1,12 @@
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+alias vim='nvim'
+alias gc='git commit -m'
+alias t='tmux'
+alias runconfig='source ~/.zshrc ~/.vimrc ~/.oh-my-zsh/oh-my-zsh.sh'
+
+function hg(){
+	history | grep "$1"
+}

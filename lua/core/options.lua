@@ -72,14 +72,6 @@ vim.cmd('let &t_EI="\\e[2 q"')
 vim.opt.path:append{'**'}
 vim.opt.wildignore:append{'*/node_modules/*'}
 
--- Map Tab to increase indentation in normal mode
--- vim.api.nvim_set_keymap('n', '<Tab>', '>>', { noremap = true, silent = true })
--- vim.api.nvim_set_keymap('v', '<Tab>', '<leader>gv>>', { noremap = true, silent = true })
-
--- Map Shift-Tab to decrease indentation in normal mode
--- vim.api.nvim_set_keymap('n', '<S-Tab>', '<<', { noremap = true, silent = true })
--- vim.api.nvim_set_keymap('v', '<S-Tab>', '<leader>gv<<', { noremap = true, silent = true })
-
 -- Blink cursor on error instead of beeping
 -- vim.o.visualbell = true
 
@@ -136,7 +128,8 @@ vim.o.showmatch = true
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true })
 
 -- Formatting
-vim.api.nvim_set_keymap('n', '<leader>q', 'gqip', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<leader>q', ':close<CR>', { noremap = true, silent = true })
 -- experimental: end
 
 
