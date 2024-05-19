@@ -28,7 +28,8 @@ require("lazy").setup({
   -- auto closing
   "windwp/nvim-autopairs",
   "windwp/nvim-ts-autotag",
-  "terrortylor/nvim-comment",
+  "numToStr/Comment.nvim",
+  "JoosepAlviste/nvim-ts-context-commentstring",
   {
     "vinnymeller/swagger-preview.nvim",
     run = "npm install -g swagger-ui-watcher",
