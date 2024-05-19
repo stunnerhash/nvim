@@ -28,6 +28,7 @@ require("lazy").setup({
   -- auto closing
   "windwp/nvim-autopairs",
   "windwp/nvim-ts-autotag",
+  "terrortylor/nvim-comment",
   {
     "vinnymeller/swagger-preview.nvim",
     run = "npm install -g swagger-ui-watcher",
@@ -37,7 +38,12 @@ require("lazy").setup({
     run = "cd app && npm install",
   },
   {
-    "nvim-telescope/telescope.nvim", tag = "0.1.4",
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.4",
     dependencies = { "nvim-lua/plenary.nvim" }
   },
+  {
+    'xeluxee/competitest.nvim',
+    dependencies = 'MunifTanjim/nui.nvim',
+  }
 })

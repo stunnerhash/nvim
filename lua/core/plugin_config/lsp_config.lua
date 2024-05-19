@@ -1,5 +1,5 @@
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "tsserver", "html", "tailwindcss", "cssls", "clangd" }
+  ensure_installed = { "lua_ls", "tsserver","tailwindcss"}
 })
 
 local lspconfig = require('lspconfig')

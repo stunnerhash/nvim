@@ -20,18 +20,6 @@ vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
   end,
 })
 
--- Set leader key to space if it's not already set
-vim.g.mapleader = ' '
-
--- Map <Leader>yy to yank to the system clipboard
-vim.api.nvim_set_keymap('n', '<Leader>yy', '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<Leader>yy', '"+y', { noremap = true, silent = true })
-
--- Map <Leader>pp to paste from the system clipboard
-vim.api.nvim_set_keymap('n', '<Leader>pp', '"+p', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<Leader>pp', '"+p', { noremap = true, silent = true })
-
-
 -- use spaces for tabs and whatnot
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
@@ -46,7 +34,6 @@ vim.cmd [[ set termguicolors ]]
 --Line numbers
 vim.wo.number = true
 
--- experimental: start
 vim.opt.scrolloff = 999
 
 -- Show line numbers
@@ -74,13 +61,6 @@ vim.opt.wildignore:append{'*/node_modules/*'}
 
 -- Blink cursor on error instead of beeping
 -- vim.o.visualbell = true
-
--- Shortcut to split vertically
-vim.api.nvim_set_keymap('n', '<leader>|', ':vsplit<CR>', { noremap = true, silent = true })
-
--- Shortcut to split horizontally
-vim.api.nvim_set_keymap('n', '<leader>-', ':split<CR>', { noremap = true, silent = true })
-
 -- Encoding
 vim.o.encoding = 'utf-8'
 
@@ -100,9 +80,6 @@ vim.o.shiftround = false
 vim.o.scrolloff = 999
 vim.o.backspace = 'indent,eol,start'
 
--- Move up/down editor lines
-vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true, silent = true })
 
 -- Allow hidden buffers
 vim.o.hidden = true
@@ -117,19 +94,10 @@ vim.o.laststatus = 2
 vim.o.showmode = true
 
 -- Searching
--- vim.api.nvim_set_keymap('n', '<leader><space>', ':let @/=''<cr>', { noremap = true, silent = true })
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.hlsearch = true
 vim.o.incsearch = true
 vim.o.showmatch = true
-
-  -- Map jj to exit insert mode and enter normal mode
-vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true })
-
--- Formatting
-
-vim.api.nvim_set_keymap('n', '<leader>q', ':close<CR>', { noremap = true, silent = true })
--- experimental: end
 
 
