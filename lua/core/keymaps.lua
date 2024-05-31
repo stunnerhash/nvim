@@ -36,5 +36,4 @@ vim.api.nvim_set_keymap('n', '<leader>q', ':close<CR>', { noremap = true, silent
 vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', { noremap = true })
-vim.api.nvim_set_keymap('i', '<C-s>', ':w<CR>', { noremap = true })
 vim.api.nvim_set_keymap('v', '<C-s>', ':w<CR>', { noremap = true })
