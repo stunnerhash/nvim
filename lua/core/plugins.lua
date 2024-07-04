@@ -28,6 +28,7 @@ require("lazy").setup({
   "windwp/nvim-autopairs",
   "windwp/nvim-ts-autotag",
   "numToStr/Comment.nvim",
+  "supermaven-inc/supermaven-nvim",
   "JoosepAlviste/nvim-ts-context-commentstring",
   {
     "vinnymeller/swagger-preview.nvim",
