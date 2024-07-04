@@ -1,9 +1,10 @@
 local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
-vim.keymap.set('n', '<Space><Space>', builtin.oldfiles, {})
+vim.keymap.set('n', '<Space><Space>', builtin.buffers, {})
 vim.keymap.set('n', '<Space>fs', builtin.live_grep, {})
-vim.keymap.set('n', '<Space>fc', builtin.grep_string, {})
+vim.keymap.set('n', '<Space>fo', builtin.oldfiles, {})
+vim.keymap.set('n', '<Space>fg', builtin.grep_string, {})
 vim.keymap.set('n', '<Space>fh', builtin.help_tags, {})
 
 -- Import telescope plugin safely
