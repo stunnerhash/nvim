@@ -11,7 +11,7 @@ unbind '"'
 bind - split-window -v
 
 unbind r
-bind r source-file ~/.tmux.conf
+bind r source-file ~/.tmux.conf display-message "Reloaded!"
 
 bind -r j resize-pane -D 5
 bind -r k resize-pane -U 5
@@ -19,6 +19,16 @@ bind -r l resize-pane -R 5
 bind -r h resize-pane -L 5
 
 bind -r m resize-pane -Z
+
+# Status bar
+set-option -g status-style fg=white
+set-option -g status-position top
+set-option -g automatic-rename on
+set-option -g status-left ""
+set-option -g status-right "#(echo 'session:')#[fg=green]#S "
+set-option -g status-justify centre
+set-option -g window-status-format "#{window_name}"
+set-option -g window-status-current-format "#[bold,fg=blue]#{window_name}"
 
 set -g mouse on
 set-window-option -g mode-keys vi 
