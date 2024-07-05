@@ -28,8 +28,8 @@ vim.api.nvim_set_keymap('n', '<leader>|', ':vsplit<CR>', { noremap = true, silen
 vim.api.nvim_set_keymap('n', '<leader>-', ':split<CR>', { noremap = true, silent = true })
 
 
--- Map jj to exit insert mode and enter normal mode
-vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true })
+-- Map kj to exit insert mode and enter normal mode
+vim.api.nvim_set_keymap('i', 'kj', '<Esc>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>q', ':close<CR>', { noremap = true, silent = true })
 
 -- Move up/down editor lines

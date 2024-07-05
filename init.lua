@@ -1,7 +1,7 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.g.mapleader = ' '
-vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true })
+vim.api.nvim_set_keymap('i', 'kj', '<Esc>', { noremap = true })
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
