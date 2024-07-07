@@ -30,6 +30,11 @@ require("lazy").setup({
   "numToStr/Comment.nvim",
   "supermaven-inc/supermaven-nvim",
   "JoosepAlviste/nvim-ts-context-commentstring",
+  "kylechui/nvim-surround",
+  {
+    "kevinhwang91/nvim-bqf",
+    dependencies = { "junegunn/fzf"}
+  },
   {
     "vinnymeller/swagger-preview.nvim",
     run = "npm install -g swagger-ui-watcher",

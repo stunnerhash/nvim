@@ -27,13 +27,13 @@ telescope.setup({
       i = {
         ["<C-k>"] = actions.move_selection_previous, -- move to prev result
         ["<C-j>"] = actions.move_selection_next,     -- move to next result
-        ["<C-q>"] = actions.close,
+        -- ["<C-q>"] = actions.close,
         ["<C-d>"] = actions.delete_buffer,
       },
       n = {
         ["<C-k>"] = actions.move_selection_previous, -- move to prev result
         ["<C-j>"] = actions.move_selection_next,     -- move to next result
-        ["<C-q>"] = actions.close,
+        -- ["<C-q>"] = actions.close,
         ["q"] = actions.close,
         ["d"] = actions.delete_buffer,
       }

@@ -56,6 +56,7 @@ require('competitest').setup({
 })
 
 vim.api.nvim_set_keymap('n', '<leader>cr', ':CompetiTest run<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>crr', ':CompetiTest run<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>cf', ':CompetiTest run_file<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>ca', ':CompetiTest run_all<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>cta', ':CompetiTest add_testcase<CR>', { noremap = true, silent = true })
