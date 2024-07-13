@@ -6,11 +6,11 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
 -- Buffers navigation
-vim.keymap.set('n', '<leader>bb', '<C-^>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-n>', ':bnext<CR>')
 vim.keymap.set('n', '<leader>bn', ':bnext<CR>')
 vim.keymap.set('n', '<leader>bp', ':bprevious<CR>')
 vim.keymap.set('n', '<leader>bd', ':bdelete<CR>')
+vim.keymap.set('n', '<leader>B', '<C-^>', { noremap = true, silent = true })
 
 -- Quickfix list navigation
 vim.keymap.set('n', '<leader>cn', ':cnext<CR>')
@@ -33,6 +33,8 @@ vim.api.nvim_set_keymap('i', '<C-l>', '<C-o>:TmuxNavigateRight<CR>', { noremap =
 -- Map <Leader>yy to yank to the system clipboard
 vim.api.nvim_set_keymap('n', '<Leader>y', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<Leader>y', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true })
 
 -- Map <Leader>pp to paste from the system clipboard
 vim.api.nvim_set_keymap('n', '<Leader>p', '"+p', { noremap = true, silent = true })
@@ -53,3 +55,4 @@ vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', { noremap = true })
 vim.api.nvim_set_keymap('v', '<C-s>', ':w<CR>', { noremap = true })
+vim.api.nvim_set_keymap('i', '<C-s>', '<Esc>:w<CR>a', { noremap = true, silent = true })

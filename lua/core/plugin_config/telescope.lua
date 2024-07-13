@@ -2,6 +2,7 @@ local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 vim.keymap.set('n', '<Space><Space>', builtin.buffers, {})
+vim.keymap.set('n', '<Space>ff', builtin.find_files, {})
 vim.keymap.set('n', '<Space>fs', builtin.live_grep, {})
 vim.keymap.set('n', '<Space>fo', builtin.oldfiles, {})
 vim.keymap.set('n', '<Space>fg', builtin.grep_string, {})
@@ -27,13 +28,11 @@ telescope.setup({
       i = {
         ["<C-k>"] = actions.move_selection_previous, -- move to prev result
         ["<C-j>"] = actions.move_selection_next,     -- move to next result
-        -- ["<C-q>"] = actions.close,
         ["<C-d>"] = actions.delete_buffer,
       },
       n = {
         ["<C-k>"] = actions.move_selection_previous, -- move to prev result
         ["<C-j>"] = actions.move_selection_next,     -- move to next result
-        -- ["<C-q>"] = actions.close,
         ["q"] = actions.close,
         ["d"] = actions.delete_buffer,
       }
