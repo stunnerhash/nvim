@@ -30,6 +30,7 @@ require("lazy").setup({
   "numToStr/Comment.nvim",
   "supermaven-inc/supermaven-nvim",
   "JoosepAlviste/nvim-ts-context-commentstring",
+  "nvimtools/none-ls.nvim",
   "kylechui/nvim-surround",
   {
     "kevinhwang91/nvim-bqf",

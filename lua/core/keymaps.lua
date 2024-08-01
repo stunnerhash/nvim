@@ -6,17 +6,23 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
 -- Buffers navigation
-vim.keymap.set('n', '<C-n>', ':bnext<CR>')
+vim.keymap.set('n', '<c-n>', ':bnext<CR>')
 vim.keymap.set('n', '<leader>bn', ':bnext<CR>')
 vim.keymap.set('n', '<leader>bp', ':bprevious<CR>')
 vim.keymap.set('n', '<leader>bd', ':bdelete<CR>')
 vim.keymap.set('n', '<leader>B', '<C-^>', { noremap = true, silent = true })
 
+-- Tabs navigation
+vim.keymap.set('n', '<leader>tn', ':tabnext<CR>')
+vim.keymap.set('n', '<leader>tp', ':tabprevious<CR>')
+vim.keymap.set('n', '<leader>td', ':tabclose<CR>')
+vim.keymap.set('n', '<leader>tc', ':tabnew<CR>')
+
 -- Quickfix list navigation
-vim.keymap.set('n', '<leader>cn', ':cnext<CR>')
-vim.keymap.set('n', '<leader>cp', ':cprevious<CR>')
-vim.keymap.set('n', '<leader>co', ':copen<CR>')
-vim.keymap.set('n', '<leader>cd', ':cclose<CR>')
+vim.keymap.set('n', '<leader>qn', ':cnext<CR>')
+vim.keymap.set('n', '<leader>qp', ':cprevious<CR>')
+vim.keymap.set('n', '<leader>qo', ':copen<CR>')
+vim.keymap.set('n', '<leader>qd', ':cclose<CR>')
 
 -- Location list navigation
 vim.keymap.set('n', '<leader>ln', ':lnext<CR>')
