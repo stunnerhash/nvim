@@ -9,3 +9,4 @@ null_ls.setup({
 })
 
 vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, { desc = "Format buffer" })
+vim.keymap.set("n", "==", vim.lsp.buf.format, { desc = "Format buffer" })
