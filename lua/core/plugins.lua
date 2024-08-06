@@ -37,10 +37,6 @@ require("lazy").setup({
     dependencies = { "junegunn/fzf"}
   },
   {
-    "vinnymeller/swagger-preview.nvim",
-    run = "npm install -g swagger-ui-watcher",
-  },
-  {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
   },

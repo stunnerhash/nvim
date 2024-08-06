@@ -7,10 +7,11 @@ vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
 -- Buffers navigation
 vim.keymap.set('n', '<c-n>', ':bnext<CR>')
+vim.keymap.set('n', '<c-p>', ':bprevious<CR>')
 vim.keymap.set('n', '<leader>bn', ':bnext<CR>')
 vim.keymap.set('n', '<leader>bp', ':bprevious<CR>')
 vim.keymap.set('n', '<leader>bd', ':bdelete<CR>')
-vim.keymap.set('n', '<leader>B', '<C-^>', { noremap = true, silent = true })
+vim.keymap.set('n', '\\', '<C-^>')
 
 -- Tabs navigation
 vim.keymap.set('n', '<leader>tn', ':tabnext<CR>')

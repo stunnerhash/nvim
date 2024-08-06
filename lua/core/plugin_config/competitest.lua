@@ -1,8 +1,8 @@
 require('competitest').setup({
   testcases_directory = './testcases',
-  input_name = 'input',               -- Name pattern for input files
-  output_name = 'output',             -- Name pattern for output files
-  auto_open = true,                   -- Automatically open test case results
+  input_name = 'input',
+  output_name = 'output',
+  auto_open = true,
   runner_ui = {
     interface = "split",
   },
