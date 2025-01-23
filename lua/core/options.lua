@@ -20,13 +20,6 @@ vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
   end,
 })
 
--- use spaces for tabs and whatnot
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.shiftround = true
-vim.opt.expandtab = true
-vim.opt.ai = true
-vim.opt.si = true
 
 vim.cmd [[ set noswapfile ]]
 vim.cmd [[ set termguicolors ]]
@@ -70,11 +63,13 @@ vim.o.showmatch = false
 vim.o.wrap = true
 vim.o.textwidth = 79
 vim.o.formatoptions = 'tcqrn1'
-vim.o.tabstop = 2
-vim.o.shiftwidth = 2
-vim.o.softtabstop = 2
-vim.o.expandtab = true
-vim.o.shiftround = false
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.shiftround = true
+vim.opt.ai = true
+vim.opt.si = true
 
 -- Cursor motion
 vim.o.scrolloff = 999

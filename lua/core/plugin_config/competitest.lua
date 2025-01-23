@@ -10,11 +10,11 @@ require('competitest').setup({
   split_ui = {
     position = "right",
     relative_to_editor = true,
-    total_width = 0.3,
+    total_width = 0.5,
     vertical_layout = {
       { 1, "tc" },
-      { 1, { { 1, "so" }, { 1, "eo" } } },
-      { 1, { { 1, "si" }, { 1, "se" } } },
+      { 4, { { 2, "so" }, { 1, "eo" } } },
+      { 2, { { 1, "si" }, { 1, "se" } } },
     },
     total_height = 0.4,
     horizontal_layout = {
@@ -55,7 +55,7 @@ require('competitest').setup({
 	replace_received_testcases = false,
 })
 
-vim.api.nvim_set_keymap('n', '<leader>cr', ':CompetiTest run<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-\'>', ':CompetiTest run<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>crr', ':CompetiTest run<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>cf', ':CompetiTest run_file<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>ca', ':CompetiTest run_all<CR>', { noremap = true, silent = true })
